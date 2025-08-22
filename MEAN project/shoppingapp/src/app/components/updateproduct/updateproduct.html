@@ -1,26 +1,4 @@
-<!-- <h2>Update Product</h2>
-
-<label>ID to Update:
-  <input type="number" [(ngModel)]="id" name="id">
-</label><br><br>
-
-<label>New Name:
-  <input [(ngModel)]="updatedProduct.pName" name="pName">
-</label><br><br>
-
-<label>New Price:
-  <input type="number" [(ngModel)]="updatedProduct.pPrice" name="pPrice">
-</label><br><br>
-
-<label>New Brand:
-  <input [(ngModel)]="updatedProduct.pBrand" name="pBrand">
-</label><br><br>
-
-<label>In Stock:
-  <input type="checkbox" [(ngModel)]="updatedProduct.pIsInStock" name="pIsInStock">
-</label><br><br>
-
-<button (click)="updateProduct()">Update Product</button> -->
+<!-- 
 
 
 <h2 class="title">Update Product</h2>
@@ -44,4 +22,49 @@
   </label>
 
   <button (click)="updateProduct()" class="btn">Update Product</button>
-</div>
+</div> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Product</title>
+  <link rel="stylesheet" href="updateproduct.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2 class="title">🛠️ Update Product</h2>
+
+    <form class="form-container">
+      <div class="form-group">
+        <label for="id">Product ID to Update</label>
+        <input [(ngModel)]="id" name="id" id="id" type="number" class="form-control" placeholder="Enter product ID" />
+      </div>
+
+      <div class="form-group">
+        <label for="name">New Name</label>
+        <input [(ngModel)]="updatedProduct.pName" name="pName" id="name" type="text" class="form-control" placeholder="Enter new name" />
+      </div>
+
+      <div class="form-group">
+        <label for="price">New Price</label>
+        <input [(ngModel)]="updatedProduct.pPrice" name="pPrice" id="price" type="number" class="form-control" placeholder="Enter new price" />
+      </div>
+
+      <div class="form-group">
+        <label for="brand">New Brand</label>
+        <input [(ngModel)]="updatedProduct.pBrand" name="pBrand" id="brand" type="text" class="form-control" placeholder="Enter new brand" />
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input [(ngModel)]="updatedProduct.pIsInStock" name="pIsInStock" id="stock" type="checkbox" />
+        <label for="stock">In Stock</label>
+      </div>
+
+      <button type="submit" (click)="updateProduct()" class="btn">Update Product</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,23 +1,44 @@
-<h2 class="title">Welcome to ShoppingAPI</h2>
+<h2 class="title">Welcome User</h2>
 
-<div class="home-container">
-  <p>
-    This is a simple shopping application built with <b>Angular</b>, <b>Node.js</b>, and <b>MongoDB</b>.  
-    You can manage products easily by adding, updating, deleting, and viewing them in one place.
-  </p>
 
-  <p>
-    Use the navigation bar above to explore different features:
-  </p>
+  <header>
+    <h1>Welcome to the MEAN Shopping App</h1>
+    <p>Your one-stop shop for managing products with ease.</p>
+  </header>
 
-  <ul>
-    <li><b>Products</b> – View all available products</li>
-    <li><b>Add Product</b> – Add new products to the system</li>
-    <li><b>Update Product</b> – Edit existing product details</li>
-    <li><b>Delete Product</b> – Remove products you no longer need</li>
-  </ul>
+  <main>
+    <section class="instructions">
+      <h2>🚀 How to Run the Project</h2>
+      <ol>
+        <li>Clone the repository: <code>git clone https://github.com/dc152003/project2.git</code></li>
+        <li>Open the project in VS Code: <code>code .</code></li>
+        <li>Open two terminals in VS Code.</li>
+      </ol>
 
-  <p>
-    Start exploring and manage your shopping data with ease!
-  </p>
-</div>
+      <h3>🖥️ Terminal 1 — Backend</h3>
+      <ul>
+        <li><code>cd "MEAN project/shoppingdb"</code></li>
+        <li><code>node server.js</code></li>
+        <li>Ensure MongoDB is running and the <strong>shopping</strong> database exists.</li>
+      </ul>
+
+      <h3>🌐 Terminal 2 — Frontend</h3>
+      <ul>
+        <li><code>cd "MEAN project/shoppingapp"</code></li>
+        <li><code>npm install</code></li>
+        <li><code>ng serve</code></li>
+        <li>Open <a href="http://localhost:4200/" target="_blank">http://localhost:4200/</a></li>
+      </ul>
+    </section>
+
+    <section class="features">
+      <h2>🛒 Features</h2>
+      <ul>
+        <li>View product list from MongoDB</li>
+        <li>Create new products</li>
+        <li>Update existing products</li>
+        <li>Delete products</li>
+      </ul>
+    </section>
+  </main>
+
