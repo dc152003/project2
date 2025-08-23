@@ -55,21 +55,7 @@ To verify the database:
 
 Example data:
 
- db.productlist.insertMany[{
-            "_id": 101,
-            "pName": "shirt",
-            "pPrice": 300,
-            "pBrand": "pantaloons",
-            "pIsInStock": true
-          },
-          {
-            "_id": 102,
-            "pName": "picture frame",
-            "pPrice": 100,
-            "pBrand": "wood",
-            "pIsInStock": true
-          }
-        ]
+        db.productlist.insertMany([{ "_id": 101, "pName": "shirt", "pPrice": 300, "pBrand": "pantaloons", "pIsInStock": true }, { "_id": 102, "pName": "picture frame", "pPrice": 100, "pBrand": "wood", "pIsInStock": true}])
 
 
 
