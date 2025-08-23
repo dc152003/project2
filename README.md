@@ -55,8 +55,7 @@ To verify the database:
 
 Example data:
 
-        [
-          {
+ db.productlist.insertMany[{
             "_id": 101,
             "pName": "shirt",
             "pPrice": 300,
