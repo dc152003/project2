@@ -57,15 +57,14 @@ Example data:
 
         [
           {
-            "_id": ObjectId("68a6f16b1e4e6e9ca5eec4aa"),
-            "id": 101,
+            "_id": 101,
             "pName": "shirt",
             "pPrice": 300,
             "pBrand": "pantaloons",
             "pIsInStock": true
           },
           {
-            "_id": 1,
+            "_id": 102,
             "pName": "picture frame",
             "pPrice": 100,
             "pBrand": "wood",
