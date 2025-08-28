@@ -50,6 +50,7 @@ Open two terminals in VS Code from the same project directory.
 To verify the database:
         
         use shopping
+        db.createCollection('productlist')
         db.productlist.find()
 
 
